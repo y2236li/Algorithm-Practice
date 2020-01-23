@@ -21,6 +21,9 @@ words = ["a", "banana", "app", "appl", "ap", "apply", "apple"]
 Output: "apple"
 Explanation: 
 Both "apply" and "apple" can be built from other words in the dictionary. However, "apple" is lexicographically smaller than "apply".
+
+Program workflow:
+sort words by length -> store those words with length 1 -> if words[:-1] is in the hash table, store the current word -> store the words with the max length in a vector -> sort the vector alphabetically and choose the smallest one
 '''
 
 
